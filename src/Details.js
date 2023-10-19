@@ -27,16 +27,18 @@ import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
+import nonoLogo from "./Images/nonoLogo.png"
+
 // Logos
 export const logos = {
   logogradient: logogradient,
-  logo: logo,
+  logo: nonoLogo,
 };
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Ignacio Gutman",
+  tagline: "I was born for this shit, my g",
   img: profile,
   about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
 };
@@ -77,18 +79,16 @@ export const workDetails = [
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
-    Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Position: "Secondary School",
+    Company: "Ort",
+    Location: "BS.AS",
+    Duration: "March 2019 - Dec 2023",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Position: "B2 First Certificate",
+    Company: `Cambridge`,
+    Location: "BS.AS",
+    Duration: "2022",
   },
 ];
 
@@ -98,9 +98,6 @@ export const techStackDetails = {
   css: css,
   js: js,
   react: react,
-  redux: redux,
-  sass: sass,
-  tailwind: tailwind,
   bootstrap: bootstrap,
   vscode: vscode,
   postman: postman,
