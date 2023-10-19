@@ -8,9 +8,8 @@ function Projects() {
 
   const [projectDetails, setProjectDetails] = useState([])
 
-  axios.get("../projects.json")
+  axios.get("/projects.json")
   .then(function (response) {
-    console.log(response);
     setProjectDetails(response.data)
   })
   .catch(function (error) {
