@@ -25,3 +25,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+html {
+  background-color: rgb(24, 22, 34);
+}
