@@ -2,18 +2,18 @@ import React from "react";
 
 function Project({ title, image, description, techstack, previewLink, githubLink }) {
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
+    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-900 " >
       <img src={image} alt="" loading="lazy" />
-      <div className="dark:bg-dark-card p-4">
-        <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
-        <p className="text-content pt-4 font-light">{description}</p>
-        <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
+      <div className="bg-dark-card p-4 " style={{height: '250px'}}>
+        <h1 className="text-light-heading font-semibold text-lg pt-1">{title}</h1>
+        <p className="text-light-heading pt-4 font-light">{description}</p>
+        <h3 className="text-light-heading font-medium pt-4">
           Tech Stack : <span className="font-light">{techstack}</span>
         </h3>
         <div className="flex justify-between items-center mt-5">
           <div className="flex items-center">
             <svg
-              className="stroke-dark-heading dark:stroke-white inline-block min-w-fit"
+              className="stroke-white inline-block min-w-fit"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -37,14 +37,14 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               href={previewLink}
               target="_blank"
               rel="noreferrer noopener"
-              className="underline pl-2 font-light dark:text-white"
+              className="underline pl-2 font-light text-white"
             >
               Live Preview
             </a>
           </div>
           <div className="flex items-center">
             <svg
-              className="dark:fill-light-heading fill-dark-heading inline-block min-w-fit"
+              className="fill-light-heading inline-block min-w-fit"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -62,7 +62,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               href={githubLink}
               target="_blank"
               rel="noreferrer noopener"
-              className="underline pl-2 font-light dark:text-white"
+              className="underline pl-2 font-light text-white"
             >
               View Code
             </a>

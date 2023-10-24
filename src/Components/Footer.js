@@ -12,7 +12,7 @@ function Footer() {
         <li>
           <a href={twitter} target="_blank" rel="noreferrer noopener">
             <svg
-              className="dark:fill-light-heading fill-dark-heading"
+              className="fill-light-heading"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -26,7 +26,7 @@ function Footer() {
         <li>
           <a href={linkdein} target="_blank" rel="noreferrer noopener">
             <svg
-              className="dark:fill-light-heading fill-dark-heading"
+              className="fill-light-heading "
               width="30"
               height="30"
               viewBox="0 0 30 30"
@@ -40,7 +40,7 @@ function Footer() {
         <li>
           <a href={github} target="_blank" rel="noreferrer noopener">
             <svg
-              className="dark:fill-light-heading fill-dark-heading"
+              className="fill-light-heading "
               width="30"
               height="30"
               viewBox="0 0 30 30"
@@ -55,10 +55,11 @@ function Footer() {
             </svg>
           </a>
         </li>
+        {/*
         <li>
           <a href={instagram} target="_blank" rel="noreferrer noopener">
             <svg
-              className="dark:fill-light-heading fill-dark-heading"
+              className="fill-light-heading "
               width="30"
               height="30"
               viewBox="0 0 48 48"
@@ -72,9 +73,10 @@ function Footer() {
             </svg>
           </a>
         </li>
+  */}
       </ul>
 
-      <h1 className="text-center m-2"> <a href="mailto: nachogutmann@gmail.com">nachogutmann@gmail.com</a> - <a href="tel: +54 9 11 4046-2652">+54 9 11 4046-2652</a></h1>
+      <h1 className="text-center  text-light-heading  font-bold m-2"> <a href="mailto: nachogutmann@gmail.com">nachogutmann@gmail.com</a> - <a href="tel: +54 9 11 4046-2652">+54 9 11 4046-2652</a></h1>
     </footer>
   );
 }

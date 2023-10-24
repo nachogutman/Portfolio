@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { logos, socialMediaUrl } from "../Details";
+import nonoLogo from "../Images/nonoLogo.png"
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +13,11 @@ function Header() {
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
+          <img className="w-14" src={nonoLogo} alt="logo" />
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
-            className="stroke-dark-heading dark:stroke-white md:hidden"
+            className="stroke-white md:hidden"
             width="25"
             height="20"
             viewBox="0 0 16 13"
@@ -33,7 +34,7 @@ function Header() {
         </div>
       </div>
       <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
+        <ul className="text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
             <NavLink to="/" onClick={toggleClass}>
               Home

@@ -2,15 +2,15 @@ import React from "react";
 
 function Work({ position, company, location, type, duration }) {
   return (
-    <article className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
+    <article className="pt-8 border-b-2 border-light-content border-opacity-20">
       <div className="flex justify-between items-center">
-        <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
+        <h1 className=" md:text-lg lg:text-xl text-light-heading ">{position}</h1>
       </div>
       <div className="flex justify-between pt-2">
         <div className="flex flex-col md:flex-row">
           <div className="flex items-center pr-5">
             <svg
-              className="dark:fill-light-heading fill-dark-heading min-w-fit"
+              className="fill-light-heading min-w-fit"
               width="16"
               height="12"
               viewBox="0 0 16 12"
@@ -19,11 +19,11 @@ function Work({ position, company, location, type, duration }) {
             >
               <path d="M3.33331 1.5V10.5H7.33331V8.75H8.66665V10.5H12.6666V1.5H3.33331ZM4.66665 2.5H5.99998V3.5H4.66665V2.5ZM7.33331 2.5H8.66665V3.5H7.33331V2.5ZM9.99998 2.5H11.3333V3.5H9.99998V2.5ZM4.66665 4.5H5.99998V5.5H4.66665V4.5ZM7.33331 4.5H8.66665V5.5H7.33331V4.5ZM9.99998 4.5H11.3333V5.5H9.99998V4.5ZM4.66665 6.5H5.99998V7.5H4.66665V6.5ZM7.33331 6.5H8.66665V7.5H7.33331V6.5ZM9.99998 6.5H11.3333V7.5H9.99998V6.5ZM4.66665 8.5H5.99998V9.5H4.66665V8.5ZM9.99998 8.5H11.3333V9.5H9.99998V8.5Z" />
             </svg>
-            <p className="text-content text-xs md:text-sm font-light pl-1">{company}</p>
+            <p className=" text-xs md:text-sm font-light pl-1 text-light-heading ">{company}</p>
           </div>
           <div className="flex items-center">
             <svg
-              className="dark:fill-light-heading fill-dark-heading min-w-fit"
+              className="fill-light-heading min-w-fit"
               width="16"
               height="12"
               viewBox="0 0 16 12"
@@ -34,10 +34,10 @@ function Work({ position, company, location, type, duration }) {
               <path d="M8.00001 11.25L3.78201 7.51912C3.7234 7.4631 3.66539 7.40673 3.60801 7.35C2.8875 6.63817 2.49826 5.76871 2.50001 4.875C2.50001 3.78098 3.07947 2.73177 4.11092 1.95818C5.14237 1.1846 6.54132 0.75 8.00001 0.75C9.4587 0.75 10.8576 1.1846 11.8891 1.95818C12.9205 2.73177 13.5 3.78098 13.5 4.875C13.5018 5.7683 13.1127 6.63737 12.3925 7.34888L12.392 7.35C12.392 7.35 12.242 7.49775 12.2195 7.51763L8.00001 11.25ZM4.40601 6.89813C4.40701 6.89813 4.52301 7.01362 4.54951 7.03837L8.00001 10.0905L11.455 7.03425C11.477 7.01362 11.594 6.89738 11.5945 6.897C12.1831 6.31542 12.5012 5.60514 12.5 4.875C12.5 3.97989 12.0259 3.12145 11.182 2.48851C10.3381 1.85558 9.19348 1.5 8.00001 1.5C6.80653 1.5 5.66194 1.85558 4.81803 2.48851C3.97411 3.12145 3.50001 3.97989 3.50001 4.875C3.49896 5.60559 3.81739 6.31628 4.40651 6.89813H4.40601Z" />
             </svg>
 
-            <p className="text-content text-xs md:text-sm font-light pl-1">{location}</p>
+            <p className=" text-xs md:text-sm font-light pl-1 text-light-heading ">{location}</p>
           </div>
         </div>
-        <p className="text-content text-xs md:text-sm font-light pl-1 min-w-fit">{duration}</p>
+        <p className=" text-xs md:text-sm font-light pl-1 min-w-fit text-light-heading ">{duration}</p>
       </div>
     </article>
   );

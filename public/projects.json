@@ -1,18 +1,50 @@
 [
     {
-        "title": "Project title 1",
+        "title": "Biletly",
         "image": "projectImage1",
-        "description": "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-        "techstack": "HTML/CSS, JavaScript",
+        "description": "Projecto final de la escuela secundaria, aplicacion que convierte entradas de eventos en NFT y da la posibilidad al usuario de ver sus entradas",
+        "techstack": "Solidity, React, Node, Sql",
+        "previewLink": "https://google.com",
+        "githubLink": "https://github.com/MarianoCaceres5/WalletBiletly"
+    },
+    {
+        "title": "El pozo",
+        "image": "projectImage2",
+        "description": "Juego de cartas tambien conocido como intermedio",
+        "techstack": "c# mvc with .net",
+        "previewLink": "https://google.com",
+        "githubLink": "https://github.com/nachogutman/Pozo"
+    },
+    {
+        "title": "PreguntadORT",
+        "image": "projectImage2",
+        "description": "Juego de preguntas y respuestas",
+        "techstack": "c# mvc with .net",
+        "previewLink": "https://google.com",
+        "githubLink": "https://github.com/nachogutman/PreguntadORT"
+    },
+    {
+        "title": "Pizzas-Api",
+        "image": "projectImage2",
+        "description": "Api sobre un catalogo de pizzas sobre una base de datos",
+        "techstack": "Node.js, sql",
+        "previewLink": "https://google.com",
+        "githubLink": "https://github.com/nachogutman/Pizzas-Api"
+    },
+    {
+        "title": "Qatar22",
+        "image": "projectImage2",
+        "description": "Pagina que muestra informacion sobre el mundial, la cual se puede modificar.",
+        "techstack": "c# mvc with .net",
         "previewLink": "https://google.com",
         "githubLink": "https://github.com"
     },
     {
-        "title": "Project title 2",
+        "title": "Etch-A-Sketch",
         "image": "projectImage2",
-        "description": "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        "description": "Pizarra para dibujar",
         "techstack": "HTML/CSS, JavaScript",
         "previewLink": "https://google.com",
-        "githubLink": "https://github.com"
+        "githubLink": "https://github.com/nachogutman/Etch-A-Sketch"
     }
 ]

@@ -21,7 +21,7 @@ function Technologies() {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tech Stack
         </h1>
         <p className="text-content py-2 lg:max-w-3xl">
@@ -39,7 +39,7 @@ function Technologies() {
         <img src={sass} title="SASS" alt="" />
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl pt-10 text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tools
         </h1>
       </section>
