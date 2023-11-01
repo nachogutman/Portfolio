@@ -1,17 +1,59 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { FavoritesContext } from "../context/FavoritesContext";
+
 
 function Project({ title, image, description, techstack, previewLink, githubLink }) {
+
+  const [imgSrc, setImgSrc] = useState('.././Images/corazonVacio.png')
+  const [fav, setFav] = useState(false);
+  const { favsList, addToFavorites, deleteFromFavorites } = useContext(FavoritesContext)
+
+  const project = {
+    "title": title,
+    "image": image,
+    "description": description,
+    "techstack": techstack,
+    "previewLink": previewLink,
+    "githubLink": githubLink
+  }
+
+  const swapFav = (e) => {
+    if (fav === false) {
+      setFav(true)
+      addToFavorites(project)
+      setImgSrc('.././Images/corazonRelleno.png')
+    } else {
+      setFav(false)
+      deleteFromFavorites(project)
+      setImgSrc('.././Images/corazonVacio.png')
+    }
+  }
+
+  useEffect(() => {
+    if(favsList !== null){
+      favsList.forEach(item => {
+        if(item.title === project.title){
+          setFav(true)
+          setImgSrc('.././Images/corazonRelleno.png')
+        }
+      });
+    }
+
+  }, []);
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-900 " >
+    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-900" >
       <img src={image} alt="" loading="lazy" />
-      <div className="bg-dark-card p-4 " style={{height: '250px'}}>
-        <h1 className="text-light-heading font-semibold text-lg pt-1">{title}</h1>
-        <p className="text-light-heading pt-4 font-light">{description}</p>
-        <h3 className="text-light-heading font-medium pt-4">
-          Tech Stack : <span className="font-light">{techstack}</span>
-        </h3>
-        <div className="flex justify-between items-center mt-5">
-          <div className="flex items-center">
+      <div className="bg-dark-card p-4" style={{ height: '250px' }}>
+        <div style={{ height: '190px' }}>
+          <h1 className="text-light-heading font-semibold text-lg pt-1">{title}</h1>
+          <p className="text-light-heading pt-4 font-light">{description}</p>
+          <h3 className="text-light-heading font-medium pt-4">
+            Tech Stack : <span className="font-light">{techstack}</span>
+          </h3>
+        </div>
+
+        <div className="flex justify-between items-center " >
+          <div className="flex items-center ">
             <svg
               className="stroke-white inline-block min-w-fit"
               width="20"
@@ -42,6 +84,11 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               Live Preview
             </a>
           </div>
+
+          <img src={imgSrc} onClick={(e) => swapFav(e)} style={{
+            width: "40px",
+          }} className="flex items-center text-white" alt="hola" />
+
           <div className="flex items-center">
             <svg
               className="fill-light-heading inline-block min-w-fit"
