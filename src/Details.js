@@ -2,7 +2,7 @@
 // Logo images
 import logogradient from "./assets/logo.svg";
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./Images/miFoto.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -26,9 +26,8 @@ export const logos = {
 // Enter your Personal Details here
 export const personalDetails = {
   name: "Ignacio Gutman",
-  tagline: "I was born for this shit, my g",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `Me llamo Ignacio Gutman y tengo 17 años. Actualmente estoy estudiando en la escuela tecnica Ort en la especialidad de informática. `,
 };
 
 // Enter your Social Media URLs here
