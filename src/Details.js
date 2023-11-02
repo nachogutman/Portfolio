@@ -15,7 +15,8 @@ import git from "./assets/techstack/git.png";
 import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
-
+import csharp from "./assets/techstack/csharp.png"
+import solidity from "./assets/techstack/solidity.png"
 
 // Logos
 export const logos = {
@@ -92,6 +93,8 @@ export const techStackDetails = {
   git: git,
   github: github,
   figma: figma,
+  csharp: csharp,
+  solidity: solidity,
 };
 
 // Enter your Contact Details here
