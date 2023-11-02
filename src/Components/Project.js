@@ -31,7 +31,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
 
   useEffect(() => {
     if(favsList !== null){
-      favsList.forEach(item => {
+      favsList.forEach(item => { 
         if(item.title === project.title){
           setFav(true)
           setImgSrc('.././Images/corazonRelleno.png')
@@ -39,7 +39,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
       });
     }
 
-  }, []);
+  }, [imgSrc]);
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-900" >
       <img src={image} alt="" loading="lazy" />

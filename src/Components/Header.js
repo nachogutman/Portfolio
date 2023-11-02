@@ -15,7 +15,7 @@ function Header() {
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          Home
+
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -59,13 +59,23 @@ function Header() {
           </li>
           <li className="pb-1 md:pb-0">
             <NavLink to="/favorites" onClick={toggleClass}>
-              <img src="../Images/corazonRelleno.png" style={{ position:'relative', width: '35px'}}/>
-              <p style={{position: 'absolute', color: 'rgb(24, 22, 34)', top: '5%', left: '76.8%'}}> {favsList.length} </p>
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
+              <div>
+                <img src="../Images/corazonRelleno.png" style={{ top: '40%', width: '35px', top: '50%',
+                  left: '50%',
+                  transform: 'translate(0, 50%)', }} />
+                <p style={{
+                  color: 'rgb(24, 22, 34)',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(0, -50%)',
+              }}> {favsList.length} </p>
+            </div>
+
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+    </header >
   );
 }
 

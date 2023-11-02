@@ -8,12 +8,13 @@ function Home() {
   const [projectDetails, setProjectDetails] = useState([])
   axios.get("/projects.json")
     .then(function (response) {
-      setProjectDetails(response.data)
+      var temp = response.data;
+      temp = temp.slice(0,6)
+      setProjectDetails(temp)
     })
     .catch(function (error) {
       console.log(error);
     })
-
 
   const { name, tagline, img } = personalDetails;
   const h11 = useRef();
@@ -107,7 +108,6 @@ function Home() {
             projectDetails.map(
               ({ title, image, description, techstack, previewLink, githubLink }, index) => (
 
-                index <= 6 ?
                   <Project
                     title={title}
                     image={image}
@@ -116,10 +116,6 @@ function Home() {
                     previewLink={previewLink}
                     githubLink={githubLink}
                   />
-
-                  :
-
-                  <></>
               )
             )
           )}
