@@ -52,8 +52,9 @@ function Project({ title, image, description, techstack, previewLink, githubLink
           </h3>
         </div>
 
+        
         <div className="flex justify-between items-center " >
-          <div className="flex items-center ">
+          {/*<div className="flex items-center ">
             <svg
               className="stroke-white inline-block min-w-fit"
               width="20"
@@ -84,6 +85,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               Live Preview
             </a>
           </div>
+          */}
 
           <img src={imgSrc} onClick={(e) => swapFav(e)} style={{
             width: "40px",
