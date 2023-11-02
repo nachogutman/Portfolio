@@ -1,5 +1,5 @@
 import React from "react";
-import { logos, socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
 
 function Footer() {
   const { linkdein, github, twitter, instagram } = socialMediaUrl;

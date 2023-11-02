@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Technologies from "./Pages/Technologies";
+import Favorites from "./Pages/Favorites"
 
 import FavoritesProvider from "./context/FavoritesContext";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/technologies" element={<Technologies />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
         <Footer />
       </Router>

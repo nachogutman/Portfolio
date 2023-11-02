@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { logos, socialMediaUrl } from "../Details";
-import nonoLogo from "../Images/nonoLogo.png"
+import { FavoritesContext } from "../context/FavoritesContext";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +9,13 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  const { favsList } = useContext(FavoritesContext)
+
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          <img className="w-14" src={nonoLogo} alt="logo" />
+          Home
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -53,6 +55,12 @@ function Header() {
           <li className="pb-1 md:pb-0">
             <NavLink to="/projects" onClick={toggleClass}>
               Projects
+            </NavLink>
+          </li>
+          <li className="pb-1 md:pb-0">
+            <NavLink to="/favorites" onClick={toggleClass}>
+              <img src="../Images/corazonRelleno.png" style={{ position:'relative', width: '35px'}}/>
+              <p style={{position: 'absolute', color: 'rgb(24, 22, 34)', top: '5%', left: '76.8%'}}> {favsList.length} </p>
             </NavLink>
           </li>
         </ul>
