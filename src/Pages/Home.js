@@ -93,7 +93,7 @@ function Home() {
           </h2>
         </div>
         <div className="mt-5 md:mt-0">
-          <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+          <img ref={myimageref} className="w-1/2 md:ml-auto" src={"https://static.vecteezy.com/system/resources/previews/012/195/913/non_2x/user-pixel-perfect-flat-gradient-two-color-ui-icon-social-network-member-personal-information-simple-filled-pictogram-gui-ux-design-for-mobile-application-isolated-rgb-illustration-vector.jpg"} alt="Pavan MG" />
         </div>
       </main>
 
