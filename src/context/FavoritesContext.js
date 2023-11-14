@@ -5,13 +5,11 @@ import { createContext } from 'react';
 export const FavoritesContext = createContext();
 
 export const FavoritesProvider = (props) => {
-    const [favsList, setFavsList] = useState([]);
+    let inicial = localStorage.getItem('favsList') ? JSON.parse(localStorage.getItem('favsList')) : [];
+    const [favsList, setFavsList] = useState(inicial);
 
     function addToFavorites(project) {
-        setFavsList([...favsList, project])
-        
-        localStorage.setItem('favsList', JSON.stringify([...favsList, project]))
-        console.log(JSON.parse(localStorage.getItem('favsList')))
+        setFavsList([...favsList, project])                    
     }
 
     function deleteFromFavorites(project) {
@@ -25,16 +23,12 @@ export const FavoritesProvider = (props) => {
 
         const temp = [...favsList];
         temp.splice(i, 1);
-        setFavsList(temp);
-        localStorage.setItem('favsList', JSON.stringify(temp))
-        console.log(JSON.parse(localStorage.getItem('favsList')))
-    }
+        setFavsList(temp);                
+    }    
 
-    useEffect(() => {
-        if(JSON.parse(localStorage.getItem('favsList')) !== null){
-            setFavsList(JSON.parse(localStorage.getItem('favsList')))
-        }
-    }, []);
+    useEffect(()=>{
+        localStorage.setItem('favsList', JSON.stringify(favsList))
+    },[favsList])
 
 
     return (

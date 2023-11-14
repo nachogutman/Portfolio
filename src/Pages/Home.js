@@ -97,7 +97,7 @@ function Home() {
         </div>
       </main>
 
-      <div className="topProjects mx-auto container " style={{ marginTop: "10%" }}>
+      <div className="topProjects mx-auto container " style={{ marginTop: "15%" }}>
 
         <h1 className="text-center text-2xl text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mt-5"> Top Projects </h1>
 
